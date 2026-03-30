@@ -1,0 +1,119 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "do later"
+authors = ["later"]
+license = "later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = {extras = ["async"], version = "^3.1.0"}
+flask-cors = "^5.0.0"
+python-jwt = "^4.1.0"
+boto3 = "^1.35.29"
+sqlalchemy = "^2.0.35"
+marshmallow = "^3.22.0"
+requests = "^2.32.3"
+python-jose = "^3.3.0"
+python-dotenv = "^1.0.1"
+marshmallow-sqlalchemy = "^1.1.0"
+alembic = "^1.13.3"
+psycopg = { extras = ["binary"], version = "^3.2.3" }
+pgvector = "^0.3.5"
+marshmallow-dataclass = "^8.7.1"
+flask-limiter = "^3.8.0"
+openai = "^1.52.2"
+langchain = "^0.3.7"
+gunicorn = "^23.0.0"
+psycopg2 = "^2.9.10"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.7"
+boto3-stubs = {version = "1.35.39", extras = ["s3", "sts"]}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# Below is a list of linter
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.8
+target-version = "py38"
+
+[lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = false
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
