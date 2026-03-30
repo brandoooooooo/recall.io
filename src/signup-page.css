@@ -1,0 +1,163 @@
+/* deprecated: This file is no longer in use. */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    /* Added light background color */
+    color: #000;
+    /* Changed to black */
+}
+
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.heading {
+    color: #000;
+    /* Changed to black */
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    margin-bottom: 2rem;
+    color: #666;
+    /* Changed to dark gray */
+}
+
+.google-sign-in {
+    background-color: #000;
+    /* Changed to black */
+    color: white;
+    /* Changed to white */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    /* Changed to black */
+    margin: 0 10px;
+}
+
+.divider {
+    color: #000;
+    /* Changed to black */
+    padding: 0 10px;
+}
+
+.input-field {
+    width: 300px;
+    padding: 12px;
+    margin: 0.5rem 0;
+    border: 2px solid #ccc;
+    /* Changed to light gray */
+    border-radius: 4px;
+    color: #000;
+    /* Changed to black */
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* Added white background color */
+}
+
+.password-container {
+    position: relative;
+    width: 300px;
+}
+
+.password-input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5rem 0;
+    padding-right: 40px;
+    border: 2px solid #ccc;
+    /* Changed to light gray */
+    border-radius: 4px;
+    color: #000;
+    /* Changed to black */
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* Added white background color */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    /* Changed to dark gray */
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    margin-bottom: 1.5rem;
+}
+
+.green-link {
+    color: #00cc66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.arrow-btn {
+    background-color: #000;
+    /* Changed to black */
+    border: none;
+    padding: 12px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    /* Changed to white */
+}
+
+.arrow-icon {
+    color: white;
+    /* Changed to white */
+    font-size: 24px;
+}
+
+.sign-up {
+    margin-top: 1.5rem;
+}

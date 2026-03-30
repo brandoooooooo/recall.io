@@ -1,0 +1,66 @@
+@import "theme.css";
+
+.contentContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.sidemenu {
+  flex: 0 0 260px;
+  max-width: 300px;
+  background-color: var(--bg-primary-light);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.chatbox {
+  flex: 1;
+  overflow-y: hidden;
+  transition: margin 0.3s ease;
+}
+
+.rightSidebarContainer {
+  flex: 0 0 300px;
+  max-width: 300px;
+  background-color: var(--bg-primary-light);
+  border-left: 1px solid var(--border-color);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.rightSidebarContainer.collapsed {
+  flex: 0 0 40px;
+}
+
+.rightSidebarContainer.collapsed .rightSidebarContent {
+  display: none;
+}
+
+.rightSidebarContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.collapseButton {
+  display: block;
+  margin: 10px auto;
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collapseButton:hover {
+  background-color: var(--hover-color);
+}

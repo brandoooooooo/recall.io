@@ -1,0 +1,125 @@
+:root {
+  /* Color Palette */
+  --primary-color: #0e387a;
+  --secondary-color: #3a5d9b;
+  --accent-color: #c5d1e8;
+  --text-primary: #e1e5ea;
+  --text-secondary: #b0b8c1;
+
+  /* Gray for interfaces */
+  --gray-shade-1: #21252b;
+  --gray-shade-2: #343a40;
+  --gray-shade-3: #495057;
+  --gray-shade-4: #858e96;
+  --gray-shade-5: #acb5bd;
+  --gray-shade-6: #cfd4da;
+  --gray-shade-7: #dee2e6;
+  --gray-shade-8: #ebedef;
+  --gray-shade-9: #f1f3f5;
+  --gray-shade-10: #f8f9fa;
+
+  /* Background Colors */
+  --background-gradient-light: #f1f3f5;
+  --bg-primary: #1b2024;
+  --bg-secondary: #32373a;
+  --bg-tertiary: #4c565e;
+  --bg-primary-light: #97abbb;
+  --background-gradient-dark: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+
+  /* Navigation Colors */
+  --nav-bg-light: #ebedef;
+  --nav-bg-dark: #121518;
+  --nav-text-light: #495057;
+  --nav-text-dark: #ebedef;
+
+  /* Shadows */
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+
+  /* Typography */
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-small: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-large: 1.25rem;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-base: 1rem;
+  --spacing-large: 2rem;
+
+  /* Border Radius */
+  --border-radius-small: 4px;
+  --border-radius-base: 8px;
+  --border-radius-large: 12px;
+
+  /* Border Color */
+  --border-color: #e0e0e0;
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+
+  /* Messages */
+  --text-color-light: #000000;
+  --message-user-bg-light: #ebedef;
+  --message-bot-bg-light: #dee2e6;
+  --message-user-bg-dark: #454747;
+  --message-bot-bg-dark: #373f3f;
+
+  /* Text */
+  --text-color-dark: white;
+  --text-color-light: black;
+
+  /* Base Styles */
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --error-text: #a00;
+  --error-background: #ffcccc;
+
+  --navbar-height: 45px;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.shadow-base {
+  box-shadow: 0 2px 10px var(--shadow-light);
+}
+
+html {
+  background-color: lightblue; /* Color for overscroll background */
+  overscroll-behavior: none; /* Prevent other interactions during overscroll */
+}
+
+/* Ensure the body's content doesn't bleed into the overscroll area */
+body {
+  background-color: white; /* Main content background */
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll; /* Force vertical scrolling */
+}

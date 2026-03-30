@@ -1,0 +1,126 @@
+@import "theme.css";
+
+.pageContainer {
+  top: 0;
+  min-height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-gradient-light);
+  overflow-y: auto;
+}
+
+.contentContainer {
+  flex: 1;
+  padding: 20px;
+  margin-top: 60px;
+  background: var(--background-gradient-light);
+}
+
+.fileSystemWrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--text-color-light);
+}
+
+.fileSystemHeader {
+  width: 80%;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  border: 1px solid #e0e0e0;
+}
+
+.backButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.backButton:hover {
+  background-color: var(--gray-shade-6);
+}
+
+.fileSystemObject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fileObject {
+  background-color: rgba(173, 216, 230, 0.6);
+  border: 1px solid var(--accent-color);
+}
+
+.folderObject {
+  background-color: var(--gray-shade-7);
+  border: 1px solid var(--accent-color);
+}
+
+.selectedFile {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+}
+
+.startCollectionButton {
+  position: fixed;
+  bottom: 45px;
+  text-decoration: none;
+  padding: var(--spacing-base) calc(var(--spacing-base) * 2);
+  border-radius: var(--border-radius-large);
+  cursor: pointer;
+  background-color: var(--background-gradient-light);
+  color: var(--gray-shade-3);
+  font-family: var(--font-family);
+  border: 1px solid var(--gray-shade-3);
+  transition: var(--transition-base);
+}
+
+.popup {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--error-background);
+  color: var(--error-text);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-base);
+  z-index: 20000;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}

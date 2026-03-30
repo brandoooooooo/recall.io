@@ -1,0 +1,81 @@
+@import "theme.css";
+
+.container {
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-base);
+  background-color: var(--background-gradient-light);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+}
+
+.navbarContainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: var(--spacing-base);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  transition: var(--transition-base);
+}
+
+.subtitle {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  margin-bottom: calc(var(--spacing-large) * 2);
+  transition: var(--transition-base);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+}
+
+.loginButton,
+.signUpButton {
+  text-decoration: none;
+  padding: var(--spacing-base) calc(var(--spacing-large) * 2);
+  border-radius: var(--border-radius-large);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  border: 1px solid var(--gray-shade-3); /* Added small border */
+  transition: var(--transition-base);
+}
+
+.loginLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}

@@ -1,0 +1,93 @@
+@import "../styles/theme.css";
+
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-gradient-light);
+    border-radius: var(--border-radius-base);
+    padding: var(--spacing-large);
+    width: 90%;
+    max-width: 800px;
+    outline: none;
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.modalContainer h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    color: var(--nav-text-light);
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+}
+
+.personalityGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-large);
+}
+
+.personalityCard {
+    background-color: white;
+    border-radius: var(--border-radius-base);
+    padding: var(--spacing-large);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid var(--gray-shade-7);
+}
+
+.personalityCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    background-color: var(--gray-shade-9);
+}
+
+.iconContainer {
+    margin-bottom: var(--spacing-base);
+    color: var(--primary-color);
+}
+
+.personalityCard h3 {
+    margin-bottom: var(--spacing-small);
+    color: var(--nav-text-light);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+}
+
+.personalityCard p {
+    font-size: var(--font-size-small);
+    color: var(--gray-shade-3);
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+:global(body.dark-mode) .modalContainer {
+    background-color: var(--bg-primary);
+}
+
+:global(body.dark-mode) .modalContainer h2 {
+    color: var(--nav-text-dark);
+}
+
+:global(body.dark-mode) .personalityCard {
+    background-color: var(--bg-secondary);
+    border-color: var(--bg-tertiary);
+}
+
+:global(body.dark-mode) .personalityCard:hover {
+    background-color: var(--bg-tertiary);
+}
+
+:global(body.dark-mode) .personalityCard h3 {
+    color: var(--nav-text-dark);
+}
+
+:global(body.dark-mode) .personalityCard p {
+    color: var(--text-secondary);
+}
+
+:global(body.dark-mode) .iconContainer {
+    color: var(--accent-color);
+}

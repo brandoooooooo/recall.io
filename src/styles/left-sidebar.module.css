@@ -1,0 +1,98 @@
+@import "theme.css";
+
+/* Sidebar Styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f5f5f5;
+  transition: var(--transition-base);
+  border-right: 1px solid var(--border-color);
+}
+
+.chatList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 16px;
+  border-radius: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 12px;
+  margin-top: 0;
+  scroll-behavior: smooth;
+  transition: var(--transition-base);
+}
+
+/* Chat Buttons */
+.chatButton {
+  border-style: groove;
+  padding: 12px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  font-family: var(--font-family-base);
+  transition: all 0.2s ease-in-out;
+  /* border: none; */
+  background-color: transparent;
+  color: #333;
+  transform: translateX(2px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  transition: var(--transition-base);
+}
+
+.activeChatButton {
+  background-color: var(--gray-shade-5);
+  border-radius: 8px;
+  /* margin: 4px 8px; */
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-base);
+}
+
+.chatButton:hover {
+  background-color: var(--gray-shade-7);
+  border-radius: 15px;
+}
+
+.activeChatButton:hover {
+  background-color: var(--gray-shade-6, rgba(255, 255, 255, 0.08));
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear Conversation Button */
+.clearConversationIcon {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: relative;
+  transition: var(--transition-base);
+}
+
+.chatButton:hover .clearConversationIcon {
+  opacity: 1;
+}
+
+.clearConversationButton {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+  display: flex-end;
+}
+
+.chatItemWrapper {
+  position: relative;
+}
+
+.sidebarHeader {
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: #333;
+  padding: 20px;
+}

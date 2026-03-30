@@ -1,0 +1,165 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-gradient-light);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+.navbarContainer {
+  width: 100%;
+  background-color: var(--nav-bg-light);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.signInContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signInHeading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+}
+
+.signInSubheading {
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-family: var(--font-family);
+}
+
+.googleSignIn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  background-color: white;
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+}
+
+.dividerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider {
+  padding: 0 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.inputField,
+.passwordInputField {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+}
+
+.passwordContainer,
+.emailContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: -10px;
+  top: 45%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+
+.forgotPassword {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+  color: var(--nav-bg-light);
+}
+
+.greenLink {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.greenLink:hover {
+  text-decoration: underline;
+}
+
+.arrowBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.arrowIcon {
+  color: white;
+}
+
+.signUp {
+  font-size: 18px;
+  color: var(--gray-shade-3);
+  font-weight: bold;
+}
+
+/* Focus states */
+.inputField:focus,
+.passwordInputField:focus {
+  outline: none;
+  color: var(--gray-shade-1);
+  border-color: var(--text-primary);
+}
+
+/* Placeholder styles */
+.inputField::placeholder,
+.passwordInputField::placeholder {
+  color: var(--gray-shade-2);
+}
